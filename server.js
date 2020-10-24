@@ -1,0 +1,33 @@
+//get necessary third part code
+const express = require("express");
+const morgan = require("morgan");
+const mongoose = require("mongoose");
+
+//set up a PORT
+const PORT = 8000;
+
+//Create express app instance
+const app = express();
+
+//body parser
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+//make public folder accessible to client
+app.use(express.static("public"));
+
+//connect to mongo document
+mongoose.connect("mongodb://localhost/workout", {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true
+});
+
+// routes
+//app.use(require("./routes/api.js"));
+//app.use(require("./routes/view.js"));
+
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}!`);
+});
