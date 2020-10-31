@@ -19,9 +19,10 @@ app.use(express.static("public"));
 
 //connect to mongo document
 mongoose.connect("mongodb://localhost/workout", {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
 });
 
 //routes
@@ -29,5 +30,5 @@ app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/htmlRoutes.js"));
 
 app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}!`);
+  console.log(`App running on port ${PORT}!`);
 });
