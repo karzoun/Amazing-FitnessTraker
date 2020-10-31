@@ -1,59 +1,55 @@
-# Amazing-FitnessTraker
+# Amazing Fitness Traker
 
-# Unit 17 Nosql Homework: Workout Tracker
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Description
 
-## User Story
+it is a fitness traker app was created in javescript anduseed mongo to store the data
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Table of Contents
 
-## Business Context
+- [Installation](#installation)
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+- [Usage](#usage)
 
-## Acceptance Criteria
+- [License](#license)
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+  - [Contributing](#contributing)
 
-The user should be able to:
+  - [Tests](#tests)
 
-  * Add exercises to a previous workout plan.
+  - [Questions](#questions)
 
-  * Add new exercises to a new workout plan.
+  ## Installation
 
-  * View the combined weight of multiple exercises on the `stats` page.
+  To install necessary dependencies, run the following command:
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+  ```
+  npm install
+  ```
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+  ## Usage
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+  easy to use
 
-## Commit Early and Often
+  ## License
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+This project is licensed under the MIT license.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## img
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+<img width="1322" alt="" src="./fitnesst-img/FT1.png">
+<img width="1322" alt="" src="./fitnesst-img/FT2.png">
+<img width="1322" alt="" src="./fitnesst-img/FT3.png">
 
-Follow these guidelines for committing:
+## Tests
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+To run tests, run the following command:
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+```
+npm test
+```
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+## Questions
 
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+If you have any questions about the repo, open an issue or contact me directly at karzoun_27@hotmail.com. You can find more of my work at [karzoun](https://github.com/karzoun/).
