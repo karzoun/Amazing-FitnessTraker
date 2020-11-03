@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 
 //set up a PORT
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 //Create express app instance
 const app = express();
